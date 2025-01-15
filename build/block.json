@@ -1,0 +1,90 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/custom-hero-block",
+  "version": "0.1.0",
+  "title": "Custom Hero Block",
+  "category": "design",
+  "icon": "cover-image",
+  "description": "A customizable hero section block with title, description, button, background media, Google rating, and SVG shape dividers.",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Vision new "
+    },
+    "description": {
+      "type": "string",
+      "default": "Premium dental care at Smile Bright Clinics in London and Manchester. Advanced technology backed by over 20 years of expertise & more than 30,000 satisfied patients. Starting at just £50 per month with 0% interest financing.."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Jetzt Beratungstermin vereinbaren"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "mediaUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "mediaType": {
+      "type": "string",
+      "default": "image"
+    },
+    "backgroundSize": {
+      "type": "string",
+      "default": "cover"
+    },
+    "backgroundPosition": {
+      "type": "string",
+      "default": "center center"
+    },
+    "topDivider": {
+      "type": "boolean",
+      "default": false
+    },
+    "topDividerColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "topDividerHeight": {
+      "type": "number",
+      "default": 100
+    },
+    "bottomDivider": {
+      "type": "boolean",
+      "default": true
+    },
+    "bottomDividerColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "bottomDividerHeight": {
+      "type": "number",
+      "default": 100
+    },
+    "rating": {
+      "type": "number",
+      "default": 4.8
+    },
+    "ratingText": {
+      "type": "string",
+      "default": "Google Reviews"
+    },
+    "googleIconUrl": {
+      "type": "string",
+      "default": "https://example.com/google-icon.png"
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "textdomain": "custom-hero-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
