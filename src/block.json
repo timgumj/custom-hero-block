@@ -8,7 +8,7 @@
   "icon": "cover-image",
   "description": "A customizable hero section block with title, description, button, background media, Google rating, and SVG shape dividers.",
   "attributes": {
-    "title": { "type": "string", "default": "Vision new " },
+    "title": { "type": "string", "default": "Rediscover Vision" },
     "description": {
       "type": "string",
       "default": "Premium dental care at Smile Bright Clinics in London and Manchester. Advanced technology backed by over 20 years of expertise & more than 30,000 satisfied patients. Starting at just £50 per month with 0% interest financing.."

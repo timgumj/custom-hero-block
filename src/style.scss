@@ -1,6 +1,5 @@
 .custom-hero-section {
 	position: relative;
-
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -10,14 +9,24 @@
 	/* Upper Section */
 	.custom-hero-upper {
 		position: relative;
-
 		padding: 2rem;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+
+		/* Use the SVG as the background */
+		background-image: url('./background-curve.svg');
+		background-size: cover;
+		background-position: center bottom;
+		background-repeat: no-repeat;
 		background-color: transparent;
+
+		/* Adjust height */
+		height: 39%;
+		margin-bottom: -15%;
+		z-index: 2;
 
 		/* Upper Content */
 		.custom-hero-upper-content {
@@ -32,7 +41,6 @@
 			flex-direction: column;
 			align-items: center;
 
-			/* Adjust for mobile and tablet */
 			@media (max-width: 1024px) {
 				padding: 0 0.5rem;
 				align-items: center;
@@ -43,20 +51,21 @@
 			h1 {
 				font-size: 2.2rem;
 				margin-bottom: 1rem;
-				margin-top: -1rem;
+				margin-top: 0.2rem;
 			}
 
 			p {
 				font-size: 15px;
 				font-weight: bold;
 				margin-bottom: 1rem;
+				margin-top: 0.5rem;
 				margin-left: 20rem;
 				margin-right: 20rem;
 
-				/* Center text and adjust margins for mobile and tablet */
 				@media (max-width: 1024px) {
 					margin-left: auto;
 					margin-right: auto;
+					margin-top: -0.4rem;
 					text-align: center;
 					width: 80%;
 				}
@@ -75,14 +84,12 @@
 					background-color: #005f8c;
 				}
 
-				/* Center button on mobile and tablet */
 				@media (max-width: 1024px) {
 					margin-left: auto;
 					margin-right: auto;
 				}
 			}
 
-			/* Rating Section */
 			.custom-hero-rating {
 				display: flex;
 				justify-content: center;
@@ -99,7 +106,6 @@
 				z-index: 4;
 				position: relative;
 
-				/* Center rating section on mobile and tablet */
 				@media (max-width: 1024px) {
 					margin-left: auto;
 					margin-right: auto;
@@ -116,17 +122,6 @@
 				}
 			}
 		}
-
-		/* Bottom Divider */
-		.custom-hero-bottom-divider {
-			position: relative;
-			width: 100%;
-			height: var(--custom-hero-bottom-divider-height, 100px);
-			background-color: var(--custom-hero-bottom-divider-color, #f0f0f0);
-			clip-path: polygon(0 0, 25% 100%, 50% 0, 75% 100%, 100% 0);
-			z-index: 3;
-			margin-top: -20px;
-		}
 	}
 
 	/* Lower Section */
@@ -135,16 +130,11 @@
 		position: relative;
 		width: 100%;
 		height: 30%;
-		z-index: 1;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: -48px;
 
 		.custom-hero-media-container {
 			position: relative;
 			width: 100%;
-			height: 100%;
+			height: 80%;
 			display: flex;
 			justify-content: center;
 			align-items: center;

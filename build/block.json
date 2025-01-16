@@ -10,7 +10,7 @@
   "attributes": {
     "title": {
       "type": "string",
-      "default": "Vision new "
+      "default": "Rediscover Vision"
     },
     "description": {
       "type": "string",
